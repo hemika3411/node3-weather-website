@@ -10,7 +10,6 @@ const port = process.env.PORT || 3000
 const publicDirPath = path.join(__dirname, '../public')
 const partialPath = path.join(__dirname,'../views/partials')
 
-
 app.set('view engine','hbs')
 app.use(express.static(publicDirPath))
 hbs.registerPartials(partialPath)
